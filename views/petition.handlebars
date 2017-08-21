@@ -1,0 +1,16 @@
+<div id='description'>
+    <p id='big-text'>Sign our petition to make your city car free on Sundays!</p>
+    <p id='signer'>{{firstName}} {{lastName}}</p>
+
+    <form action='/petition' method='POST'>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <canvas id="canvas" width=400px height=100px style="border:1px dotted #000000;"></canvas><br>
+        <input type='hidden' name='signature'>
+        <p id='sign-here'>Sign here</p><br>
+        <input id='button' type="submit" value="Submit">
+    </form>
+
+    <p class='text'>{{error}}</p>
+    <a href='/logout' id ='logout'>Log out</a>
+
+</div>

@@ -1,0 +1,14 @@
+<div id='description'>
+    <p id='big-text'>We the undersigned {{citizensText}} demand that one day a week would be car free and we could experience the cities in a new way.</p>
+
+    <div id='pictures'>
+        <img id='car' src='/public/images/car.svg.png'>
+        <img id='bike' src='/public/images/bike.jpeg'>
+    </div>
+
+    <ul>
+        {{#each signerDetails}}
+        <li>{{#if url}}<a href={{url}}>{{first_name}} {{last_name}}</a>{{else}}{{first_name}} {{last_name}}{{/if}} {{age}}  <a href='/signers/{{city}}'>{{city}}</a></li>
+        {{/each}}
+    </ul>
+</div>

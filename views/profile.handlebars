@@ -1,0 +1,25 @@
+<div id='description'>
+    <p id='big-text'>Now we would like to get to know you a little better. Please fill in the following information.</p>
+
+    <div id='pictures'>
+        <img id='car' src='/public/images/car.svg.png'>
+        <img id='bike' src='/public/images/bike.jpeg'>
+    </div>
+
+    {{#if error}}
+    <p id='error-text'>{{error}}</p>
+    {{/if}}
+
+    <form action='/profile' method='POST'>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <p class='text'>Age</p><br>
+        <input name ='age' type='text'><br>
+        <p class='text'>City</p><br>
+        <input name ='city' type='text'><br>
+        <p class='text'>Homepage</p><br>
+        <input name ='homepage' type='text'><br>
+
+        <input id='profile-button' type="submit" value="Continue">
+    </form>
+
+</div>

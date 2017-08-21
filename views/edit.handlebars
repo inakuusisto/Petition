@@ -1,0 +1,33 @@
+<div id='edit-description'>
+
+    <p id='big-text'>Edit your profile</p>
+    <div id='pictures'>
+        <img id='car' src='/public/images/car.svg.png'>
+        <img id='bike' src='/public/images/bike.jpeg'>
+    </div>
+
+    {{#if error}}
+    <p id='error-text'>{{error}}</p>
+    {{/if}}
+
+    <form action='/profile/edit' method='POST'>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <p class='text'>First name</p><br>
+        <input name ='first' type='text' value={{firstName}} required><br>
+        <p class='text'>Last name</p><br>
+        <input name ='last' type='text' value={{lastName}} required><br>
+        <p class='text'>Email Address</p><br>
+        <input name ='email' type='text' value={{email}} required><br>
+        <p class='text'>Password</p><br>
+        <input name ='password' type='password'><br>
+        <p class='text'>Age</p><br>
+        <input name ='age' type='text' value={{age}}><br>
+        <p class='text'>City</p><br>
+        <input name ='city' type='text' value={{city}}><br>
+        <p class='text'>Homepage</p><br>
+        <input id='last-input' name ='homepage' type='text' value={{homepage}}><br>
+
+        <input id='button' type="submit" value="Update">
+    </form>
+
+</div>

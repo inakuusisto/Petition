@@ -1,0 +1,21 @@
+<div id='description'>
+    <p id='big-text'>Please log in</p>
+
+    <div id='pictures'>
+        <img id='car' src='/public/images/car.svg.png'>
+        <img id='bike' src='/public/images/bike.jpeg'>
+    </div>
+
+    <p id='error-text'>{{error}}</p>
+
+    <form action='/login' method='POST'>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <p class='text'>Email Address</p><br>
+        <input name ='email' type='text' required><br>
+        <p class='text'>Password</p><br>
+        <input input id='last-input' name ='password' type='password' required><br>
+
+        <input id='button' type="submit" value="Log in">
+    </form>
+
+</div>

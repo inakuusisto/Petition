@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #F1F1F0;
+    font-family: palatino;
+    display: flex;
+    justify-content: center;
+    color: #66605F;
+}
+
+#pictures {
+    cursor: pointer;
+}
+
+#bike {
+    display: none;
+    height: 150px;
+    width: 220px;
+    border-radius: 10px;
+}
+
+#canvas {
+    border:1px solid black;
+    margin-top: 30px;
+}
+
+
+#description {
+    width: 600px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#edit-description {
+    width: 600px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+#big-text {
+    font: 30px bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#car {
+    height: 150px;
+    width: 220px;
+    border-radius: 10px;
+}
+
+#last-input {
+    margin-bottom: 20px;
+}
+
+#button {
+    height: 30px;
+    width: 120px;
+    background-color: #FF0000;
+    color: black;
+    font: 20px bold;
+    border-radius: 10px;
+    margin: 0 auto;
+    display:block;
+}
+
+#sign-here {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#error-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: red;
+    text-align: center;
+}
+
+#signer {
+    font: 30px bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+#sign-image {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-style: solid;
+    border-bottom-color: black;
+    border-width: 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+li {
+    margin-top: 15px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #6495ED;
+}
+
+#logout {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.options {
+    margin-top: 15px;
+}
+
+#profile-button {
+    height: 30px;
+    width: 120px;
+    background-color: #FF0000;
+    color: black;
+    font: 20px bold;
+    border-radius: 10px;
+    margin: 0 auto;
+    display:block;
+    margin-top: 20px;
+}
