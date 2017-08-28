@@ -9,7 +9,14 @@
     <div id='signers-list'>
     <ul>
         {{#each signerDetails}}
-        <li>{{#if url}}<a href={{url}}>{{first_name}} {{last_name}}</a>{{else}}{{first_name}} {{last_name}}{{/if}} {{age}}  <a href='/signers/{{city}}'>{{city}}</a></li>
+        <li>
+          {{#if url}}
+            <a href={{url}}>{{first_name}} {{last_name}}</a>
+          {{else}}
+            {{first_name}} {{last_name}}
+          {{/if}}{{#if age}}({{age}}{{else}}{{#if city}}({{/if}}{{/if}}{{#if city}}{{#if age}}, {{/if}}<a href="/signers/{{city}}">{{city}}</a>)
+            {{else}}{{#if age}}){{/if}}
+            {{/if}}
         {{/each}}
     </ul>
 </div>

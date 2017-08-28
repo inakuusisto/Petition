@@ -63,8 +63,21 @@ body {
     border-radius: 10px;
 }
 
+.input-field {
+    padding: 8px 10px;
+    width: 200px;
+    border: 1px solid #66605F;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
 #last-input {
     margin-bottom: 20px;
+    padding: 8px 10px;
+    width: 200px;
+    border: 1px solid #66605F;
+    border-radius: 10px;
+    font-size: 12px;
 }
 
 #button {
